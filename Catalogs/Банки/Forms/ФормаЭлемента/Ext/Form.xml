@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="27">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование банка</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Top</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<MaxHeight>5</MaxHeight>
+					<MultiLine>false</MultiLine>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="КодБанка" id="24">
+					<DataPath>1/0:3b09074e-5448-4fff-943b-7b055ced0517</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<ContextMenu name="КодБанкаКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="КодБанкаРасширеннаяПодсказка" id="26"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="МестонахождениеБанка" id="16">
+			<DataPath>Объект.МестонахождениеБанка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МестонахождениеБанкаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="МестонахождениеБанкаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды банка</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>#333333</TitleTextColor>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<InputField name="Бик" id="7">
+					<DataPath>Объект.Бик</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БикКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="БикРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ЦБУ" id="19">
+					<DataPath>Объект.ЦБУ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЦБУКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ЦБУРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Банки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.Code</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
